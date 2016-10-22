@@ -1,6 +1,6 @@
 {
   "name": "react-native-modal-select-option",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "react-native dropdown select option with modal",
   "main": "lib/Dropdown.js",
   "scripts": {
@@ -49,5 +49,6 @@
   "bugs": {
     "url": "https://github.com/theredfoxfire/react-native-dropdown-modal.git"
   },
-  "homepage": "https://github.com/theredfoxfire/react-native-dropdown-modal.git"
+  "homepage": "https://github.com/theredfoxfire/react-native-dropdown-modal.git",
+  "readme": "https://github.com/theredfoxfire/react-native-dropdown-modal/blob/master/README.md"
 }
