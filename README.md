@@ -79,3 +79,22 @@ AppRegistry.registerComponent('SandboxRn', () => DropdownDemo);
 
 
 ```
+
+## screen cast
+
+![dropdown-demo](https://cloud.githubusercontent.com/assets/4158619/19621291/c576498c-98b8-11e6-93b2-13b4296ee3da.gif)
+
+
+## props list
+
+```
+
+  onSelect: Function;
+  label?: string;
+  onShow: Function;
+  isShowingOptions: boolean,
+  selectedOption: string | Object;
+  options: Array<any>;
+  animationType: 'none' | 'fade' | 'slide';
+  
+```
