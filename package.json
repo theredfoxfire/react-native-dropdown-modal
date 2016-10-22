@@ -1,0 +1,31 @@
+{
+  "name": "react-native-modal-dropdown",
+  "version": "0.0.1",
+  "description": "react-native dropdown select option with modal",
+  "main": "lib/Dropdown.js",
+  "scripts": {
+    "build": "rimraf lib && babel src --ignore '_*' --out-dir lib",
+    "prepublish": "npm run build",
+    "lint": "eslint --max-warnings 0 .",
+    "typecheck": "flow",
+    "test-src": "mocha src/__tests__/*.js src/**/__tests__/*.js",
+    "test": "npm run lint && npm run typecheck && npm run test-src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/theredfoxfire/react-native-dropdown-modal.git"
+  },
+  "keywords": [
+    "react",
+    "dropdown",
+    "es6-class",
+    "select-option",
+    "modal"
+  ],
+  "author": "vizzlearn@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theredfoxfire/react-native-dropdown-modal.git"
+  },
+  "homepage": "https://github.com/theredfoxfire/react-native-dropdown-modal.git"
+}
