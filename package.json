@@ -1,5 +1,5 @@
 {
-  "name": "react-native-modal-dropdown",
+  "name": "react-native-modal-select-option",
   "version": "0.0.1",
   "description": "react-native dropdown select option with modal",
   "main": "lib/Dropdown.js",
@@ -38,7 +38,7 @@
     "url": "git+ssh://github.com/theredfoxfire/react-native-dropdown-modal.git"
   },
   "keywords": [
-    "react",
+    "react-native",
     "dropdown",
     "es6-class",
     "select-option",
