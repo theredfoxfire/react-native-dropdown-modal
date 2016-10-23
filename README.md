@@ -2,6 +2,8 @@
 
 react-native dropdown select option with modal
 
+available in npm [react-native-modal-select-option](https://www.npmjs.com/package/react-native-modal-select-option)
+
 ## install package from [npm](https://www.npmjs.com/)
 
 `$ npm install --save react-native-modal-select-option`
