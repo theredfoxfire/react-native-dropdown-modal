@@ -97,12 +97,19 @@ AppRegistry.registerComponent('SandboxRn', () => DropdownDemo);
 
 ```
 
+type Option = {
+  value: string | number | Object | Function;
+  label: string;
+}
+
+type Props = {
   onSelect: Function;
   label?: string;
   onShow: Function;
-  isShowingOptions: boolean,
-  selectedOption: string | Object;
-  options: Array<any>;
+  isShowingOptions: boolean;
+  selectedOption: Option;
+  options: Array<Option>;
   animationType: 'none' | 'fade' | 'slide';
+};
   
 ```
