@@ -30,14 +30,19 @@ import {
 import Dropdown from 'react-native-modal-select-option';
 
 const propsDropdown = {
-  defaultValue: 'Kebumen',
-  options: ['Bandung', 'Surabaya', 'Palembang', 'Jakarta'],
+  defaultValue: {value: 5, label: 'Kebumen'},
+  options: [
+    {value: 1, label: 'Bandung'},
+    {value: 2, label: 'Surabaya'},
+    {value: 3, label: 'Palembang'},
+    {value: 4, label: 'Jakarta'},
+  ],
   label: 'Your City',
   animationType: 'none',
 };
 
 type State = {
-  selectedOption: string,
+  selectedOption: Object,
   isShowingOptions: boolean;
 };
 
@@ -46,7 +51,7 @@ export default class DropdownDemo extends Component {
   constructor() {
     super(...arguments);
     this.state = {
-      selectedOption: propsDropdown.defaultValue || 'Pilih Kota',
+      selectedOption: propsDropdown.defaultValue || {value: 0, label: 'Pilih Kota'},
       isShowingOptions: false,
     };
   }
@@ -69,7 +74,7 @@ export default class DropdownDemo extends Component {
       isShowingOptions: value,
     });
   }
-  _onSelect(item: string, isShow: boolean): void {
+  _onSelect(item: Object, isShow: boolean): void {
     this.setState({
       isShowingOptions: isShow,
       selectedOption: item,
@@ -78,6 +83,7 @@ export default class DropdownDemo extends Component {
 }
 
 AppRegistry.registerComponent('SandboxRn', () => DropdownDemo);
+
 
 
 ```
