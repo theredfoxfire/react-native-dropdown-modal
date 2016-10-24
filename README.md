@@ -103,9 +103,9 @@ type Option = {
 }
 
 type Props = {
-  onSelect: Function;
+  onSelect: (option: Option, isShow: boolean) => void;
   label?: string;
-  onShow: Function;
+  onShow: (isShow: boolean) => void;
   isShowingOptions: boolean;
   selectedOption: Option;
   options: Array<Option>;
