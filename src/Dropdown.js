@@ -2,7 +2,6 @@
 import React from 'react';
 import {TouchableOpacity, View, Text, Modal, ScrollView, TouchableWithoutFeedback} from 'react-native';
 import styles from './Dropdown-style';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 
 type Option = {
   value: string | number | Object | Function;
@@ -26,7 +25,6 @@ export default function Dropdown(props: Props) {
       <TouchableOpacity style={styles.button} onPress={() => props.onShow(true)}>
         <View style={styles.option}>
           <Text style={styles.defaultOptionText}>{props.selectedOption.label}</Text>
-          <Icon name="expand-more" style={styles.icon} />
         </View>
       </TouchableOpacity>
       {props.isShowingOptions ? <OptionsModal {...props} /> : null}
