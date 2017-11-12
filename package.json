@@ -1,6 +1,6 @@
 {
   "name": "react-native-modal-select-option",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "react-native dropdown select option with modal",
   "main": "lib/Dropdown.js",
   "scripts": {
@@ -12,7 +12,6 @@
     "test": "npm run lint && npm run typecheck && npm run test-src"
   },
   "dependencies": {
-    "react-native-vector-icons": "^2.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
